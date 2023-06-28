@@ -24,3 +24,23 @@ let calcScrollValue = () => {
  
  window.onscroll = calcScrollValue;
  window.onload = calcScrollValue;
+
+
+ /*===== Nav Toggler =====*/
+ const navMenu = document.querySelector(".menu");
+ navToggle = document.querySelector(".menu-btn");
+ if(navToggle)
+ {
+     navToggle.addEventListener("click", () =>
+     {
+         navMenu.classList.toggle("active");
+     })
+ }
+ // closing menu when link is clicked
+ const navLink = document.querySelectorAll(".nav-link");
+ function linkAction()
+ {
+     const navMenu = document.querySelector(".menu");
+     navMenu.classList.remove("active")
+ }
+ navLink.forEach(n => n.addEventListener("click", linkAction))

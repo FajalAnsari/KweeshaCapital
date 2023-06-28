@@ -80,6 +80,10 @@ html{
     font-weight: 400;
     font-size: 20px;
 }
+.active
+{
+    color: #18d26e !important;
+}
 
 /*=================== Navbar css end ===================*/
 
@@ -156,16 +160,29 @@ background: rgba(0, 0, 0, 0.568);
       height: 450px !important;
     }
     .Hero_section .carousel-item .carousel-caption button{
-      width: 200px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 600;
-      margin-left: 30px;
-      margin-bottom: 30px;
-      cursor: pointer;
-      display: inline-block;
+      width: 160px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .Hero_section .carousel-item .carousel-caption {
+      right: 0% !important;
+      left: 0% !important;
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+    }
+    .Hero_section .carousel-item .carousel-caption h5{
+      font-size: 1.60em;
+    }
+    .Hero_section .carousel-item .carousel-caption p{
+      font-size: 1em;
+      width: 89%;
+      margin-top: 2%;
+    }
+    .Hero_section .carousel-control-next{
+      display: none;
+    }
+    .Hero_section .carousel-control-prev{
+      display: none;
     }
   
 }

@@ -139,16 +139,18 @@ background: rgba(0, 0, 0, 0.568);
 .button-2 {
   color: var(--bg-color) !important;
   border: 3px solid var(--fourth-primary);
-  background-image: -webkit-linear-gradient(30deg, var(--fourth-primary) 50%, transparent 50%);
-  background-image: linear-gradient(30deg, var(--fourth-primary) 50%, transparent 50%);
+  background: var(--fourth-primary);
+  background: linear-gradient(to left, #50bf80 50%, #f8f8f8 50%);
+  background-position: right bottom;
+
   background-size: 500px;
-  background-repeat: no-repeat;
-  background-position: 0%;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  transition: all 0.5s ease;
+  cursor:pointer;
+
 }
 .button-2:hover {
   background-position: 100%;
+  background-position: left bottom;
   color: var(--second-primary) !important;
 }
 
@@ -309,6 +311,7 @@ position: relative !important;
       width: 120%;
   }
 }
+
 /*===================== Solutions Section start ========================*/
 
 
@@ -369,6 +372,7 @@ position: relative !important;
   margin-left: 75px !important;
   
 }
+
 .case_studies_section .container-fluid .about_title{
   
   /* color: red !important; */
@@ -426,10 +430,10 @@ position: relative !important;
 position: relative !important;
      
   }
-  .about_img{
-      margin-left: 145px !important;
+  .case_studies_section .about_img{
+      margin-left: -140px !important;
       text-align: center;
-      width: 120%;
+      width:120%;
   }
 }
 /*===================== Case Studies Section end ========================*/
@@ -566,13 +570,15 @@ position: relative !important;
   border-bottom: 3px solid var(--fourth-primary);
   padding: 30px;
   background: #fff;
-  width: 100%;
+  width: 92%;
+  
+ 
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #45ca40;
+  color: var(--fifth-primary);
   float: left;
   width: 44px;
   height: 44px;
@@ -583,26 +589,20 @@ position: relative !important;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
-.contact h1{
-  color: var(--fourth-primary) !important;
-}
-.contact p{
-  color: var(--second-primary);
-  font-weight: 600;
-}
+
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: var(--second-primary);
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: var(--primary);
 }
 
 .contact .info .email p {
@@ -629,7 +629,8 @@ position: relative !important;
 }
 
 .contact .info .social-links a:hover {
-  background: var(--second-primary);
+  background: #45ca40;
+  
   color: #fff;
 }
 
@@ -642,8 +643,8 @@ position: relative !important;
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid var(--fourth-primary);
-  border-bottom: 3px solid var(--fourth-primary);
+  border-top: 3px solid #45ca40;
+  border-bottom: 3px solid #45ca40;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -677,7 +678,7 @@ position: relative !important;
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: var(--fourth-primary);
+  background: #18d26e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -732,20 +733,24 @@ position: relative !important;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--second-primary);
+  background:var(--fifth-primary);
   border: 0;
   padding: 12px 34px;
-  color: #fff;
+  color: var(--primary);
   transition: 0.4s;
-  border-radius: 50px;
+  /* border-radius: 50px; */
+  font-size: 17px;
+  font-weight: 500;
+
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background-color: rgb(255, 255, 255);
   transition: 0.2s;
-  border-radius: 50px;
-  border: 2px solid var(--second-primary);
+ 
+  border: 2px solid #45ca40;
   color: black;
+  
 }
 
 @keyframes animate-loading {
@@ -757,6 +762,64 @@ position: relative !important;
     transform: rotate(360deg);
   }
 }
+
+.contact_main_section .first{
+  background: var(--fifth-primary);
+}
+.contact_main_section .second{
+  background-color: var(--second-primary);
+}
+.contact .form_data{
+  width: 70%;
+  margin: auto;
+}
+.contact .contact_title{
+color: var(--fourth-primary);
+margin-top: 70px !important;
+}
+.contact .contact_subtitle{
+  color: var(--primary);
+  font-weight: 500;
+}
+.contact .first .gg {
+  margin-left: 200px !important;
+  position: absolute;
+}
+.contact form label{
+color: var(--primary);
+font-weight: 500;
+font-size: 16px;
+
+}
+.contact form input[type="text"]{
+  color:var(--second-primary);
+}
+.contact .php-email-form button[type=submit] {
+background: linear-gradient(to left, var(--fourth-primary) 50%, #f8f8f8 50%);
+background-size: 200% 100%;
+color: var(--bg-color);
+background-position: right bottom;
+}
+.contact .php-email-form button[type=submit]:hover {
+background-position: left bottom;
+color:var(--second-primary) !important;
+font-weight: 500;
+
+}
+
+/* media query start for contact section */
+@media screen and (min-device-width: 1000px) and (max-device-width: 1682px) {
+  .contact .contact_section_first_block{
+       margin-left: -180px;
+       
+  }
+ 
+}
+
+
+
+
+/* media query start for contact section */
 /*==================== Contect Us Section End =================*/
 
 /*=================== Footer css start ===================*/
@@ -872,9 +935,8 @@ ul {
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
-  background: var(--third-primary);
   border: 1px solid var(--second-primary);
-  color: var(--bg-color) !important;
+  color: var(--primary) !important;
 }
 .footer-form input::placeholder {
   color: var(--bg-color) !important;
@@ -886,15 +948,16 @@ ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #163840;
+    background: var(--fourth-primary);
     padding: 13px 20px;
-    border: 1px solid #163840;
+    border: none;
     top: 0;
 }
 .subscribe-form button{
   color: #fff;
   font-size: 15px;
   padding-bottom: 5%;
+  font-weight: 400 !important;
 }
 
 .copyright-text p a{

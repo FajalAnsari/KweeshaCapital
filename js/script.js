@@ -19,7 +19,7 @@ let calcScrollValue = () => {
     });
    scrollProgress.style.background = `radial-gradient(white 50%, transparent 51%),
         conic-gradient(transparent 0% ${scrollValue}%, gainsboro ${scrollValue}%),
-        conic-gradient( var( --primary)  0deg, var( --primary)  90deg,  var( --primary) 180deg,  var( --primary))`;
+        conic-gradient( var(--fourth-primary)  0deg, var(--fourth-primary)  90deg,  var(--fourth-primary) 180deg,  var(--fourth-primary))`;
       };
  
  window.onscroll = calcScrollValue;
@@ -28,19 +28,48 @@ let calcScrollValue = () => {
 
  /*===== Nav Toggler =====*/
  const navMenu = document.querySelector(".menu");
- navToggle = document.querySelector(".menu-btn");
- if(navToggle)
- {
-     navToggle.addEventListener("click", () =>
-     {
-         navMenu.classList.toggle("active");
-     })
- }
- // closing menu when link is clicked
- const navLink = document.querySelectorAll(".nav-link");
- function linkAction()
- {
-     const navMenu = document.querySelector(".menu");
-     navMenu.classList.remove("active")
- }
- navLink.forEach(n => n.addEventListener("click", linkAction))
+function activateLink(link) {
+    // Remove the 'active' class from all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach((navLink) => {
+      navLink.classList.remove('active');
+    });
+  
+    // Add the 'active' class to the clicked nav link
+    link.classList.add('active');
+  }
+
+  /*===== Scroll Section Active Link =====*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-link');
+  
+    function activateLink(link) {
+      navLinks.forEach(function(navLink) {
+        navLink.classList.remove('active');
+      });
+      link.classList.add('active');
+    }
+  
+    function checkSectionInView() {
+      const scrollPosition = window.pageYOffset;
+  
+      sections.forEach(function(section) {
+        const sectionTop = section.offsetTop - 50; // Adjust the offset value as needed
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+  
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          navLinks.forEach(function(navLink) {
+            if (navLink.getAttribute('href') === `#${sectionId}`) {
+              activateLink(navLink);
+            }
+          });
+        }
+      });
+    }
+  
+    // Add scroll event listener to the window
+    window.addEventListener('scroll', checkSectionInView);
+  });

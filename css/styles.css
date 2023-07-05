@@ -819,13 +819,12 @@ font-weight: 500;
 @media screen and (min-device-width: 581px) and (max-device-width: 782px) {
   .contact .contact_section_first_block{
        margin-left: -80px;
-       width: 50px !important;
-       height: 50px !important;
+
        
   }
   .contact .contact_section_second_block{
     margin-left: -10px;
-    width: 50px !important;
+  
     
 }
  

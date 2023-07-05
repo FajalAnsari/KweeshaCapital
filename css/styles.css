@@ -819,7 +819,8 @@ font-weight: 500;
 @media screen and (min-device-width: 581px) and (max-device-width: 782px) {
   .contact .contact_section_first_block{
        margin-left: -80px;
-
+     
+      
        
   }
   .contact .contact_section_second_block{

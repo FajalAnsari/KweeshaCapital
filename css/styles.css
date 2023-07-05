@@ -85,6 +85,11 @@ html{
     color: #18d26e !important;
 }
 
+.contact .form_data {
+  margin-left: 160px !important;
+  width: 95% !important;
+}
+
 /*=================== Navbar css end ===================*/
 
 
@@ -292,6 +297,12 @@ background: rgba(0, 0, 0, 0.568);
   padding: 20px !important;
   
 }
+.contact .form_data {
+  margin-left: 88px !important;
+  width: 134% !important;
+}
+
+
 }
 
 @media screen and (min-device-width: 581px) and (max-device-width: 982px) { 
@@ -499,6 +510,9 @@ position: relative !important;
   transition: all 0.5s ease;
   cursor:pointer;
 }
+
+
+
 /* media query */
 @media screen and (max-width: 580px) {
 
@@ -571,6 +585,8 @@ position: relative !important;
       text-align: center;
       width: 120%;
   }
+
+
 }
 
 /*===================== About Us Section end ========================*/
@@ -782,8 +798,8 @@ position: relative !important;
   background-color: var(--second-primary);
 }
 .contact .form_data{
-  width: 70%;
-  margin: auto;
+  margin-left: 158px;
+    width: 97%;
 }
 .contact .contact_title{
 color: var(--fourth-primary);
@@ -794,8 +810,8 @@ margin-top: 70px !important;
   font-weight: 500;
 }
 .contact .first .gg {
-  margin-left: 200px !important;
-  position: absolute;
+  /* margin-left: 200px !important;
+  position: absolute; */
 }
 .contact form label{
 color: var(--primary);
@@ -821,13 +837,14 @@ font-weight: 500;
 
 
 /* media query start for contact section */
-@media screen and (min-device-width: 1000px) and (max-device-width: 1682px) {
+/* @media screen and (min-device-width: 1000px) and (max-device-width: 1682px) {
   .contact .contact_section_first_block{
        margin-left: -180px;
        
-  }
- 
-}
+  } */
+
+
+
 @media screen and (max-width: 581px) {
   .contact .contact_section_first_block{
        margin-left: -80px;
@@ -835,14 +852,30 @@ font-weight: 500;
   }
   .contact .info {
     margin-top: 4%;
-      margin-left: -43%;
-      width: 106%;
+    margin-left: 12%;
+    width: 141%;
+}
   }
   .contact .contact_section_second_block .cd_form{
     width: 140%;
     margin-left: -80px;
 }
+
+.contact .contact_section_second_block .cd_form {
+  width: 100%;
+  margin-left: -129px;
 }
+
+.contact .form_data {
+  margin-left: 81px;
+  width: 86%;
+}
+
+.contact .form_data {
+  margin-left: 84px;
+  width: 136%;
+}
+
 @media screen and (min-device-width: 582px) and (max-device-width: 781px) {
   .contact .contact_section_first_block{
     margin-left: -60px;
@@ -875,6 +908,7 @@ font-weight: 500;
  margin-top: 4%;
 }
 
+
 }
 @media screen and (min-device-width: 982px) and (max-device-width: 1311px) {
   .contact .contact_section_first_block{
@@ -891,6 +925,8 @@ font-weight: 500;
  margin-left: -50px;
  margin-top: 3%;
 }
+
+
 
 }
 

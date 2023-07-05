@@ -199,8 +199,8 @@ background: rgba(0, 0, 0, 0.568);
 .Soulutions_Section .container-fluid .b {
   background-color: var(--second-primary);
 }
-.about_img{
-  height: 70vh;
+.Soulutions_Section .about_img{
+  height: 50vh;
   margin-left: 330px;
 }
 .Soulutions_Section h1{
@@ -325,7 +325,7 @@ position: relative !important;
 
 .case_studies_section .container-fluid .about_img{
  margin: -227px;
- height:70vh;
+ height:50vh;
 }
 
 .case_studies_section .container-fluid .about_btn{
@@ -448,8 +448,8 @@ position: relative !important;
   background-color: var(--second-primary);
 }
 
-.about_img{
-  height:70vh;
+.About_Section .about_img{
+  height:50vh;
   margin-left: 330px;
 
 }
@@ -814,6 +814,20 @@ font-weight: 500;
        margin-left: -180px;
        
   }
+ 
+}
+@media screen and (min-device-width: 581px) and (max-device-width: 782px) {
+  .contact .contact_section_first_block{
+       margin-left: -80px;
+       width: 50px !important;
+       height: 50px !important;
+       
+  }
+  .contact .contact_section_second_block{
+    margin-left: -10px;
+    width: 50px !important;
+    
+}
  
 }
 

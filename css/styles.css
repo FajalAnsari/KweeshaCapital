@@ -793,8 +793,8 @@ margin-top: 70px !important;
   font-weight: 500;
 }
 .contact .first .gg {
-  margin-left: 200px !important;
-  position: absolute;
+  /* margin-left: 200px !important;
+  position: absolute; */
 }
 .contact form label{
 color: var(--primary);
@@ -834,14 +834,25 @@ font-weight: 500;
   }
   .contact .info {
     margin-top: 4%;
-      margin-left: -43%;
-      width: 106%;
+    margin-left: 12%;
+    width: 141%;
+}
   }
   .contact .contact_section_second_block .cd_form{
     width: 140%;
     margin-left: -80px;
 }
+
+.contact .contact_section_second_block .cd_form {
+  width: 145%;
+    margin-left: -129px;
 }
+
+.contact .form_data {
+  margin-left: 81px;
+  width: 86%;
+}
+
 @media screen and (min-device-width: 582px) and (max-device-width: 781px) {
   .contact .contact_section_first_block{
     margin-left: -60px;

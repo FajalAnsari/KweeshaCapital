@@ -249,11 +249,15 @@ background: rgba(0, 0, 0, 0.568);
 
 .about_img{
   margin: auto !important;
-  width: 90%;
+  width: 100%;
   margin-top: 50px !important;
   height: 100% !important;
-  margin-left: 35px !important;
+  margin-left: 25px !important;
   
+}
+#progress {
+  height: 60px !important;
+  width: 60px !important;
 }
 .Soulutions_Section .container-fluid .a{
   background: var(--second-primary) !important;
@@ -270,21 +274,23 @@ background: rgba(0, 0, 0, 0.568);
   display: none;
 
 }
-.Soulutions_Section .container-fluid .about_para{
+.Soulutions_Section .row .about_para{
   
   /* color: red !important; */
   /* text-align: start !important; */
-  font-size: 24px !important;
-
- width: 100% !important;
+  font-size: 16px !important;
+  margin-left: -30px !important;
+ width: 125% !important;
+ text-align: justify;
+ word-spacing: 1px !important;
  margin-left: 40px;
 
 }
 
 .Soulutions_Section .container-fluid .about_desp{
-  font-size: 18px;
-  width: 100% !important;
-
+  font-size: 14px;
+  margin-left: -53px !important;
+  width: 138% !important;
  
 }
 .Soulutions_Section .container-fluid .button_about{
@@ -293,9 +299,10 @@ background: rgba(0, 0, 0, 0.568);
  
   margin-left: 40px;
 }
-.Soulutions_Section .container-fluid .about_btn{
+.Soulutions_Section .row .about_btn{
   width: 190px !important;
-  padding: 20px !important;
+  padding: 8px !important;
+  margin-left: -14px !important;
   
 }
 .contact .form_data {
@@ -387,11 +394,15 @@ position: relative !important;
 
 .case_studies_section .about_img{
   margin: auto !important;
-  width: 90%;
+  width: 100%;
   margin-top: 50px !important;
   height: 90% !important;
-  margin-left: 45px !important;
+  margin-left: 25px !important;
   
+}
+.case_studies_section p {
+  width: 139%;
+  margin-left: -40px !important;
 }
 #progress{
   right: 22px;
@@ -415,21 +426,24 @@ position: relative !important;
   display: none;
 
 }
-.case_studies_section .container-fluid .about_para{
+.case_studies_section .row .about_para{
   
   /* color: red !important; */
   /* text-align: start !important; */
-  font-size: 24px !important;
-
- width: 100% !important;
+  font-size: 16px !important;
+  margin-left: -30px !important;
+ width: 130% !important;
+ text-align: justify;
+ word-spacing: 1px !important;
  margin-left: 40px;
 
 }
 
 .case_studies_section .container-fluid .about_desp{
-  font-size: 18px;
-  width: 100% !important;
-
+  font-size: 14px;
+  margin-left: -53px !important;
+  width: 142% !important;
+  text-align: justify !important;
  
 }
 .case_studies_section .container-fluid .button_about{
@@ -438,9 +452,10 @@ position: relative !important;
  
   margin-left: 40px;
 }
-.case_studies_section .container-fluid .about_btn{
+.case_studies_section .row .about_btn{
   width: 190px !important;
-  padding: 20px !important;
+  padding: 8px !important;
+  margin-left: -26px !important;
   
 }
 }
@@ -529,10 +544,10 @@ position: relative !important;
 
 .About_Section .about_img{
   margin: auto !important;
-  width: 90%;
+  width: 100%;
   margin-top: 50px !important;
   height: 100% !important;
-  margin-left: 40px !important;
+  margin-left: 25px !important;
   
 }
 .case_studies_section .row{
@@ -549,21 +564,25 @@ position: relative !important;
   display: none;
 
 }
-.About_Section .container-fluid .about_para{
+.About_Section .row .about_para{
   
   /* color: red !important; */
   /* text-align: start !important; */
-  font-size: 24px !important;
-
- width: 100% !important;
+  font-size: 16px !important;
+  margin-left: -30px !important;
+ width: 126% !important;
+ text-align: justify;
+ word-spacing: 1px !important;
  margin-left: 40px;
+
 
 }
 
 .About_Section .container-fluid .about_desp{
-  font-size: 18px;
-  width: 100% !important;
-
+  font-size: 14px;
+  margin-left: -53px !important;
+  width: 142% !important;
+ text-align: justify !important;
  
 }
 .About_Section .container-fluid .button_about{
@@ -572,9 +591,10 @@ position: relative !important;
  
   margin-left: 40px;
 }
-.About_Section .container-fluid .about_btn{
+.About_Section .row .about_btn{
   width: 190px !important;
-  padding: 20px !important;
+  padding: 8px !important;
+  margin-left: -26px !important;
   
 }
 }
@@ -867,7 +887,7 @@ font-weight: 500;
   }
   .contact .info {
     margin-top: 4%;
-    margin-left: 12%;
+    margin-left: 16%;
     width: 141%;
 }
   }
@@ -875,7 +895,9 @@ font-weight: 500;
     width: 140%;
     margin-left: -80px;
 }
-
+.contact_main_section .second {
+  background-color: #fff;
+}
 .contact .contact_section_second_block .cd_form {
   width: 100%;
   margin-left: -129px;

@@ -50,7 +50,7 @@ html{
   display: none;
   place-items: center;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 5;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   cursor: pointer;
 }
@@ -250,6 +250,7 @@ background: rgba(0, 0, 0, 0.568);
 .about_img{
   margin: auto !important;
   width: 90%;
+  margin-top: 50px !important;
   height: 100% !important;
   margin-left: 35px !important;
   
@@ -311,6 +312,7 @@ background: rgba(0, 0, 0, 0.568);
   .about_img{
       margin-left: 95px !important;
       text-align: center;
+      
       width: 80%;
   }
 }
@@ -386,12 +388,21 @@ position: relative !important;
 .case_studies_section .about_img{
   margin: auto !important;
   width: 90%;
+  margin-top: 50px !important;
   height: 90% !important;
   margin-left: 45px !important;
   
 }
 #progress{
-  right: 182px;
+  right: 22px;
+}
+.carousel {
+  animation-play-state: paused !important;
+}
+
+.navbar-brand {
+  height: 70px;
+  width: 204px;
 }
 .case_studies_section .container-fluid .about_title{
   
@@ -448,6 +459,7 @@ position: relative !important;
   .case_studies_section .container-fluid .a{
 
 position: relative !important;
+
      
   }
   .case_studies_section .about_img{
@@ -518,9 +530,13 @@ position: relative !important;
 .About_Section .about_img{
   margin: auto !important;
   width: 90%;
+  margin-top: 50px !important;
   height: 100% !important;
   margin-left: 40px !important;
   
+}
+.case_studies_section .row{
+  flex-direction: column-reverse !important;
 }
 .About_Section .container-fluid .about_title{
   

@@ -890,14 +890,15 @@ font-weight: 500;
     margin-left: 16%;
     width: 141%;
 }
+.contact_main_section .second {
+  background-color: #fff;
+}
   }
   .contact .contact_section_second_block .cd_form{
     width: 140%;
     margin-left: -80px;
 }
-.contact_main_section .second {
-  background-color: #fff;
-}
+
 .contact .contact_section_second_block .cd_form {
   width: 100%;
   margin-left: -129px;

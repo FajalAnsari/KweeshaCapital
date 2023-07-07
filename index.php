@@ -376,6 +376,6 @@ if(isset($_POST['esubmit'])){
 
   mail($to, $subject, $message, $headers);
 
-  echo "mail sent.";
+  echo `alert(message successfully sent), $form`;
 }
 ?>

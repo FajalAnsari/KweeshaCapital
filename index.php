@@ -246,7 +246,7 @@
                 <div class='contact_section_second_block col-12'>
                   
                     <div class="p-5 cd_form">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form form_data">
+                    <form action="<php? echo $_SERVER['PHP_SELE']; ?>" method="post" role="form" class="php-email-form form_data">
                         <div class="row">
                           <div class="form-group col-md-6">
                             <label for="name">Your Name</label>
@@ -270,7 +270,7 @@
                           <div class="error-message"></div>
                           <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                        <div class="text-center"><button type="submit" name="esubmit">Send Message</button></div>
                       </form>
                     </div>
                     </div>
@@ -365,3 +365,17 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+<?php
+if(isset($_POST['esubmit'])){
+  $to = "usha99412@gmail.com";
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
+  $form = $_POST['email'];
+  $headers = "Form: $form";
+
+  mail($to, $subject, $message, $headers);
+
+  echo "mail sent.";
+}
+?>

@@ -370,27 +370,33 @@
 
 
 if(isset($_POST['esubmit'])){
+
+  // Set the recipient email address
   $to = "usha99412@gmail.com";
-  $subject = $_POST['subject'];
+  $name = $_POST['name'];
+  $Subjects = $_POST['subject'];
+  $subject = "New message from contact form - Kweesha Capital";
   $message = $_POST['message'];
   $form = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // sanitizing user input
+
+  // Create the email content
+  $body = "Dear Admin,\n\n You have received a new message from the contact form on Kweesha Capital. Here are the details: \n\n Name: $name\nEmail: $form\nSubject: $Subjects\nMessage: $message\n\nPlease respond to the sender as soon as possible.\n\nBest regards,\nKweesha Capital";
+
+
+
+  // Set additional headers
   $headers = "From: $form";
 
-  mail($to, $subject, $message, $headers);
-  echo '<script>alert("' . $form . ' Successfully sent message!")</script>';
+  $success = mail($to, $subject, $body, $headers);
+
+
+  if ($success) {
+    echo 'Message sent successfully.';
+  } else {
+    echo 'An error occurred while sending the message.';
+  }
 }
 
-
-// if(isset($_POST['esubmit'])){
-//   $to = "usha99412@gmail.com";
-//   $subject = $_POST['subject'];
-//   $message = $_POST['message'];
-//   $form = $_POST['email'];
-//   $headers = "Form: $form";
-
-//   mail($to, $subject, $message, $headers);
-//   echo '<script>alert("' . $form . ' Successfully sent message!")</script>';
-// }
 ?>
 
 

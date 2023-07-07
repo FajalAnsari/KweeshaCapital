@@ -372,7 +372,7 @@
 if(isset($_POST['esubmit'])){
 
   // Set the recipient email address
-  $to = "usha99412@gmail.com";
+  $to = "info@kweeshacapital.com";
   $name = $_POST['name'];
   $Subjects = $_POST['subject'];
   $subject = "New message from contact form - Kweesha Capital";
@@ -409,7 +409,7 @@ if(isset($_POST['msubmit'])){
   $to = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // sanitizing user input;
   $subject = "New Subscriber - Kweesha Capital";
   $message = "Thank you for subscribing!";
-  $from = "info@kweeshaCaptal.com"; // sanitizing user input
+  $from = "info@kweeshacapital.com"; // sanitizing user input
 
   // Create the email content
   $body = "Dear User,\n\nYou have received a new message from the subscribe form on Kweesha Capital. Here are the details: \n\nName: $message\n\nPlease respond to the sender as soon as possible.\n\nBest regards,\nKweesha Capital";

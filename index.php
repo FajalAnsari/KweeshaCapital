@@ -406,7 +406,7 @@ if(isset($_POST['esubmit'])){
 if(isset($_POST['msubmit'])){
 
   // Set the recipient email address
-  $to = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // sanitizing user input;
+  $to = filter_var($_POST['emails'], FILTER_SANITIZE_EMAIL); // sanitizing user input;
   $subject = "New Subscriber - Kweesha Capital";
   $message = "Thank you for subscribing!";
   $from = "info@kweeshacapital.com"; // sanitizing user input

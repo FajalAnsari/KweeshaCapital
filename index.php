@@ -246,7 +246,7 @@
                 <div class='contact_section_second_block col-12'>
                   
                     <div class="p-5 cd_form">
-                    <form action="<php? echo $_SERVER['PHP_SELE']; ?>" method="post" role="form" class="php-email-form form_data">
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" role="form" class="php-email-form form_data">
                         <div class="row">
                           <div class="form-group col-md-6">
                             <label for="name">Your Name</label>

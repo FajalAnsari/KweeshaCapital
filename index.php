@@ -343,9 +343,9 @@
                                 <p class="text-white">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                             </div>
                             <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" class="text-white" placeholder="Email Address">
-                                    <button type="button">Subscribe</button>
+                                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" role="form" class="php-email-form form_data">
+                                    <input type="email" class="text-white" name="emails" placeholder="Email Address">
+                                    <button type="submit" name="msubmit" >Subscribe</button>
                                 </form>
                             </div>
                         </div>
@@ -380,7 +380,7 @@ if(isset($_POST['esubmit'])){
   $form = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // sanitizing user input
 
   // Create the email content
-  $body = "Dear Admin,\n\n You have received a new message from the contact form on Kweesha Capital. Here are the details: \n\n Name: $name\nEmail: $form\nSubject: $Subjects\nMessage: $message\n\nPlease respond to the sender as soon as possible.\n\nBest regards,\nKweesha Capital";
+  $body = "Dear Admin,\n\n You have received a new message from the contact form on Kweesha Capital. Here are the details: \n\nName: $name\nEmail: $form\nSubject: $Subjects\nMessage: $message\n\nPlease respond to the sender as soon as possible.\n\nBest regards,\nKweesha Capital";
 
 
 
@@ -388,6 +388,38 @@ if(isset($_POST['esubmit'])){
   $headers = "From: $form";
 
   $success = mail($to, $subject, $body, $headers);
+
+
+  if ($success) {
+    echo '<script>alert("Message sent successfully.")</script>';
+  } else {
+    echo '<script>alert("An error occurred while sending the message.")</script>';
+  }
+}
+
+?>
+
+
+<?php
+
+
+if(isset($_POST['msubmit'])){
+
+  // Set the recipient email address
+  $to = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // sanitizing user input;
+  $subject = "New Subscriber - Kweesha Capital";
+  $message = "Thank you for subscribing!";
+  $from = "info@kweeshaCaptal.com"; // sanitizing user input
+
+  // Create the email content
+  $body = "Dear User,\n\nYou have received a new message from the subscribe form on Kweesha Capital. Here are the details: \n\nName: $message\n\nPlease respond to the sender as soon as possible.\n\nBest regards,\nKweesha Capital";
+
+
+
+  // Set additional headers
+  $headers = "From: $to";
+
+  $success = mail($from, $subject, $body, $headers);
 
 
   if ($success) {

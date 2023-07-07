@@ -391,9 +391,9 @@ if(isset($_POST['esubmit'])){
 
 
   if ($success) {
-    echo 'Message sent successfully.';
+    echo '<script>alert("Message sent successfully.")</script>';
   } else {
-    echo 'An error occurred while sending the message.';
+    echo '<script>alert("An error occurred while sending the message.")</script>';
   }
 }
 

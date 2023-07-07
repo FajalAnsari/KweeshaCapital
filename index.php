@@ -367,14 +367,30 @@
 </html>
 
 <?php
+
+
 if(isset($_POST['esubmit'])){
   $to = "usha99412@gmail.com";
   $subject = $_POST['subject'];
   $message = $_POST['message'];
-  $form = $_POST['email'];
-  $headers = "Form: $form";
+  $form = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // sanitizing user input
+  $headers = "From: $form";
 
   mail($to, $subject, $message, $headers);
   echo '<script>alert("' . $form . ' Successfully sent message!")</script>';
 }
+
+
+// if(isset($_POST['esubmit'])){
+//   $to = "usha99412@gmail.com";
+//   $subject = $_POST['subject'];
+//   $message = $_POST['message'];
+//   $form = $_POST['email'];
+//   $headers = "Form: $form";
+
+//   mail($to, $subject, $message, $headers);
+//   echo '<script>alert("' . $form . ' Successfully sent message!")</script>';
+// }
 ?>
+
+

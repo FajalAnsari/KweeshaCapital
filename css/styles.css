@@ -252,7 +252,7 @@ background: rgba(0, 0, 0, 0.568);
   width: 90%;
   height: 100% !important;
   margin-left: 35px !important;
-  
+  margin-top: 15px !important;
 }
 .Soulutions_Section .container-fluid .a{
   background: var(--second-primary) !important;
@@ -281,8 +281,10 @@ background: rgba(0, 0, 0, 0.568);
 }
 
 .Soulutions_Section .container-fluid .about_desp{
-  font-size: 18px;
-  width: 100% !important;
+  font-size: 15px;
+  width: 110% !important;
+  text-align: justify !important;
+  margin-left: -20px !important;
 
  
 }
@@ -388,6 +390,7 @@ position: relative !important;
   width: 90%;
   height: 90% !important;
   margin-left: 45px !important;
+  margin-bottom: 15px !important;
   
 }
 #progress{
@@ -416,8 +419,10 @@ position: relative !important;
 }
 
 .case_studies_section .container-fluid .about_desp{
-  font-size: 18px;
-  width: 100% !important;
+  font-size: 15px;
+  width: 110% !important;
+  text-align: justify !important;
+  margin-left: -20px !important;
 
  
 }
@@ -521,6 +526,7 @@ position: relative !important;
   width: 90%;
   height: 100% !important;
   margin-left: 40px !important;
+  margin-top: 15px !important;
   
 }
 .About_Section .container-fluid .about_title{
@@ -546,8 +552,10 @@ position: relative !important;
 }
 
 .About_Section .container-fluid .about_desp{
-  font-size: 18px;
-  width: 100% !important;
+  font-size: 15px;
+  width: 110% !important;
+  text-align: justify !important;
+  margin-left: -20px !important;
 
  
 }

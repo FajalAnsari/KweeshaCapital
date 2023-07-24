@@ -50,7 +50,7 @@ html{
   display: none;
   place-items: center;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 5;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   cursor: pointer;
 }
@@ -121,12 +121,11 @@ background: rgba(0, 0, 0, 0.568);
   color: var(--fifth-primary);
   text-align: center;
   margin-top: -35%;
-
 }
 .Hero_section .carousel-item .carousel-caption p{
   font-family: Arial;
   color: white;
-  font-size: 1em;
+  font-size: 1.4em;
   margin-top: 2%;
 }
 .Hero_section .carousel-item .carousel-caption button{
@@ -245,14 +244,19 @@ background: rgba(0, 0, 0, 0.568);
 }
 
 /*============== media query =================*/
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 319px) {
 
 .about_img{
   margin: auto !important;
-  width: 90%;
+  width: 100%;
+  margin-top: 50px !important;
   height: 100% !important;
-  margin-left: 35px !important;
-  margin-top: 15px !important;
+  margin-left: 25px !important;
+  
+}
+#progress {
+  height: 60px !important;
+  width: 60px !important;
 }
 .Soulutions_Section .container-fluid .a{
   background: var(--second-primary) !important;
@@ -269,53 +273,231 @@ background: rgba(0, 0, 0, 0.568);
   display: none;
 
 }
-.Soulutions_Section .container-fluid .about_para{
+.Soulutions_Section .row .about_para{
   
   /* color: red !important; */
   /* text-align: start !important; */
-  font-size: 24px !important;
-
- width: 100% !important;
+  font-size: 16px !important;
+  margin-left: -30px !important;
+ width: 125% !important;
+ text-align: justify;
+ word-spacing: 1px !important;
  margin-left: 40px;
 
 }
 
 .Soulutions_Section .container-fluid .about_desp{
-  font-size: 15px;
-  width: 110% !important;
-  text-align: justify !important;
-  margin-left: -20px !important;
-
+  font-size: 14px;
+  margin-left: -57px !important;
+  width: 148% !important;
  
 }
 .Soulutions_Section .container-fluid .button_about{
   
   text-align: start !important;
- 
-  margin-left: 40px;
+
+  margin-left: 4px;
+
 }
-.Soulutions_Section .container-fluid .about_btn{
+.Soulutions_Section .row .about_btn{
   width: 190px !important;
-  padding: 20px !important;
+  padding: 8px !important;
+  margin-left: -14px !important;
   
 }
 .contact .form_data {
   margin-left: 88px !important;
   width: 134% !important;
 }
-
+.Soulutions_Section .solution_para {
+  margin-top: 10px !important;
 
 }
 
-@media screen and (min-device-width: 581px) and (max-device-width: 982px) { 
-  /* STYLES HERE */
 
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
   .about_img{
-      margin-left: 95px !important;
-      text-align: center;
-      width: 80%;
+    margin: auto !important;
+    width: 100%;
+    margin-top: 50px !important;
+    height: 100% !important;
+    margin-left: 18px !important;
+    
+  }
+  #progress {
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .Soulutions_Section .container-fluid .a{
+    background: var(--second-primary) !important;
+    
+  }
+  .Soulutions_Section .container-fluid .about_title{
+    
+    /* color: red !important; */
+    text-align: start;
+    font-size: 35px !important;
+    margin-left: 30px;
+  }
+  .Soulutions_Section .container-fluid .arrow_line{
+    display: none;
+  
+  }
+  .Soulutions_Section .row .about_para{
+    font-size: 16px !important;
+    margin-left: -30px !important;
+   width: 125% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  }
+  
+  .Soulutions_Section .container-fluid .about_desp{
+    font-size: 14px;
+    margin-left: -57px !important;
+    width: 134% !important;
+  }
+  .Soulutions_Section .container-fluid .button_about{
+    text-align: start !important;
+    margin-left: 44px;
+  }
+  .Soulutions_Section .row .about_btn{
+    width: 190px !important;
+    padding: 8px !important;
+    margin-left: -14px !important;
+  }
+  .contact .form_data {
+    margin-left: 88px !important;
+    width: 134% !important;
+  }
+  .Soulutions_Section .solution_para {
+    margin-top: 10px !important;
   }
 }
+@media screen and (min-device-width: 481px) and (max-device-width: 768px){
+  .about_img{
+    margin: auto !important;
+    width: 90%;
+    margin-top: 50px !important;
+    height: 100% !important;
+    margin-left: 14px !important;
+    
+  }
+  #progress {
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .Soulutions_Section .container-fluid .a{
+    background: var(--second-primary) !important; 
+  }
+  .Soulutions_Section .container-fluid .arrow_line{
+    display: none;
+  }
+  .Soulutions_Section .row .about_para{
+    font-size: 16px !important;
+    margin-left: -30px !important;
+   width: 109% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  }
+  
+  .Soulutions_Section .container-fluid .about_desp{
+    font-size: 14px;
+    margin-left: -57px !important;
+    width: 110% !important;
+   
+  }
+  .Soulutions_Section .container-fluid .button_about{
+    
+    text-align: start !important;
+  
+    margin-left: 94px;
+   
+  
+  }
+  .Soulutions_Section .row .about_btn{
+    width: 190px !important;
+    padding: 8px !important;
+    margin-left: -14px !important;
+    
+  }
+  .contact .form_data {
+    margin-left: 88px !important;
+    width: 134% !important;
+  }
+  .Soulutions_Section .solution_para {
+    margin-top: 10px !important;
+  
+  }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+  .about_img{
+    margin: auto !important;
+    width: 90%;
+    margin-top: 50px !important;
+    height: 80% !important;
+    margin-left: 14px !important;
+  }
+  .Soulutions_Section .row .about_para{
+    
+    font-size: 168% !important;
+    margin-left: -30px !important;
+   width: 108% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  }
+  
+  .Soulutions_Section .container-fluid .about_desp{
+
+    font-size: 150%;
+    margin-left: -53px !important;
+    width: 108% !important;
+    text-align: justify !important;
+   
+  }
+  .Soulutions_Section .row .about_btn{
+    width: 50% !important;
+    padding: 10px !important; 
+  }
+  .Soulutions_Section .solution_para{
+    font-size: 180% !important;
+    margin-top: 10px !important;
+  }
+}
+@media screen and (min-device-width: 1025px) and (max-device-width: 1300px){
+  .Soulutions_Section .about_img{
+    margin: auto !important;
+    width: 400px !important;
+    margin-top: 50px !important;
+    height: 35vh !important;
+    margin-left: 114px !important;
+  }
+  .Soulutions_Section .row .about_para{
+    
+    font-size: 128% !important;
+    margin-left: 95px !important;
+   width: 80% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+
+  }
+  
+  .Soulutions_Section .container-fluid .about_desp{
+
+    font-size: 110%;
+    margin-left: 70px !important;
+    width: 95% !important;
+    text-align: justify !important;
+   
+  }
+}
+
+
 @media screen and (min-device-width: 1000px) and (max-device-width: 1682px) { 
   /* STYLES HERE */
   .Soulutions_Section .container-fluid .a{
@@ -383,18 +565,30 @@ position: relative !important;
   cursor:pointer;
 }
 /* media query */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 319px) {
 
 .case_studies_section .about_img{
   margin: auto !important;
-  width: 90%;
+  width: 100%;
+  margin-top: 50px !important;
   height: 90% !important;
-  margin-left: 45px !important;
-  margin-bottom: 15px !important;
+  margin-left: 25px !important;
   
 }
+.case_studies_section p {
+  width: 139%;
+  margin-left: -40px !important;
+}
 #progress{
-  right: 182px;
+  right: 22px;
+}
+.carousel {
+  animation-play-state: paused !important;
+}
+
+.navbar-brand {
+  height: 70px;
+  width: 204px;
 }
 .case_studies_section .container-fluid .about_title{
   
@@ -407,36 +601,226 @@ position: relative !important;
   display: none;
 
 }
-.case_studies_section .container-fluid .about_para{
+.case_studies_section .row .about_para{
   
   /* color: red !important; */
   /* text-align: start !important; */
-  font-size: 24px !important;
-
- width: 100% !important;
+  font-size: 16px !important;
+  margin-left: -30px !important;
+ width: 130% !important;
+ text-align: justify;
+ word-spacing: 1px !important;
  margin-left: 40px;
 
 }
 
 .case_studies_section .container-fluid .about_desp{
-  font-size: 15px;
-  width: 110% !important;
+  font-size: 14px;
+  margin-left: -53px !important;
+  width: 169% !important;
   text-align: justify !important;
-  margin-left: -20px !important;
-
  
 }
 .case_studies_section .container-fluid .button_about{
   
   text-align: start !important;
  
-  margin-left: 40px;
+  margin-left: -2px;
 }
-.case_studies_section .container-fluid .about_btn{
+.case_studies_section .row .about_btn{
   width: 190px !important;
-  padding: 20px !important;
+  padding: 8px !important;
+  margin-left: -26px !important;
   
 }
+.case_studies_section .case_study_para{
+  margin-top: 10px;
+}
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+
+  .case_studies_section .about_img{
+    margin: auto !important;
+    width: 100%;
+    margin-top: 50px !important;
+    height: 90% !important;
+    margin-left: 25px !important;
+  
+    
+  }
+  .case_studies_section p {
+    width: 139%;
+    margin-left: -40px !important;
+  }
+  #progress{
+    right: 22px;
+  }
+  .carousel {
+    animation-play-state: paused !important;
+  }
+  
+  .navbar-brand {
+    height: 70px;
+    width: 204px;
+  }
+  .case_studies_section .container-fluid .about_title{
+    
+    /* color: red !important; */
+    text-align: start;
+    font-size: 15px !important;
+    margin-left: 30px;
+  }
+  .case_studies_section .container-fluid .arrow_line{
+    display: none;
+  
+  }
+  .case_studies_section .row .about_para{
+    
+    /* color: red !important; */
+    /* text-align: start !important; */
+    font-size: 16px !important;
+    margin-left: -30px !important;
+   width: 120% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  }
+  
+  .case_studies_section .container-fluid .about_desp{
+    font-size: 14px;
+    margin-left: -53px !important;
+    width: 129% !important;
+    text-align: justify !important;
+   
+  }
+  .case_studies_section .container-fluid .button_about{
+    
+    text-align: start !important;
+   
+    margin-left: 20px;
+  }
+
+  .case_studies_section .case_study_para{
+    margin-top: 10px;
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px){
+  .case_studies_section .about_img{
+    margin: auto !important;
+    width: 110%;
+    margin-top: 50px !important;
+    height: 90% !important;
+    margin-left: 25px !important;
+  }
+  .case_studies_section p {
+    width: 119%;
+    margin-left: -40px !important;
+  }
+  #progress{
+    right: 22px;
+  }
+  .carousel {
+    animation-play-state: paused !important;
+  }
+  
+  .navbar-brand {
+    height: 70px;
+    width: 204px;
+  }
+  .case_studies_section .container-fluid .about_title{
+    
+    /* color: red !important; */
+    text-align: start;
+    font-size: 15px !important;
+    margin-left: 30px;
+  }
+  .case_studies_section .container-fluid .arrow_line{
+    display: none;
+  
+  }
+  .case_studies_section .row .about_para{
+    
+    font-size: 16px !important;
+    margin-left: -30px !important;
+   width: 108% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  }
+  
+  .case_studies_section .container-fluid .about_desp{
+    font-size: 14px;
+    margin-left: -53px !important;
+    width: 119% !important;
+    text-align: justify !important;
+   
+  }
+  .case_studies_section .container-fluid .button_about{
+    
+    text-align: start !important;
+   
+    margin-left: 20px;
+  }
+
+  .case_studies_section .case_study_para{
+    margin-top: 10px;
+  }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+  .case_studies_section .row .about_para{
+    
+    font-size: 168% !important;
+    margin-left: -30px !important;
+   width: 108% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  }
+  
+  .case_studies_section .container-fluid .about_desp{
+    font-size: 150%;
+    margin-left: -53px !important;
+    width: 108% !important;
+    text-align: justify !important;
+   
+  }
+  .case_studies_section .case_study_para{
+    margin-top: 10px;
+    font-size: 180% !important;
+  }
+}
+@media screen and (min-device-width: 1025px) and (max-device-width: 1300px){
+  .case_studies_section .container-fluid .about_img{
+  
+margin-left: -60px !important;
+width: 280px !important;
+  }
+  .case_studies_section .row .about_para{
+    
+    font-size: 168% !important;
+    margin-left: -30px !important;
+   width: 108% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  }
+  
+  .case_studies_section .container-fluid .about_desp{
+    font-size: 150%;
+    margin-left: -53px !important;
+    width: 108% !important;
+    text-align: justify !important;
+   
+  }
+  .case_studies_section .case_study_para{
+    margin-top: 10px;
+    font-size: 180% !important;
+  }
+
 }
 
 @media screen and (min-device-width: 581px) and (max-device-width: 982px) { 
@@ -449,19 +833,35 @@ position: relative !important;
       height: 30vh !important;
   }
 }
-@media screen and (min-device-width: 1000px) and (max-device-width: 1682px) { 
-  /* STYLES HERE */
-  .case_studies_section .container-fluid .a{
+@media screen and (min-device-width: 982px) and (max-device-width: 1311px){
+  .case_studies_section .container-fluid .about_img{
+  
+    margin-top: 50px !important;
+    height: 35vh !important;
+    margin-right: -85px !important;
+  }
+  .case_studies_section .row .about_para{
+    
+    font-size: 126% !important;
+    margin-left: -30px !important;
+   width: 90% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  }
+  
+  .case_studies_section .container-fluid .about_desp{
+    font-size: 112%;
+    margin-left: -53px !important;
+    width: 98% !important;
+    text-align: justify !important;
+   
+  }
 
-position: relative !important;
-     
-  }
-  .case_studies_section .about_img{
-      margin-left: -140px !important;
-      text-align: center;
-      width:120%;
-  }
+
 }
+
 /*===================== Case Studies Section end ========================*/
 
 
@@ -484,9 +884,7 @@ position: relative !important;
 .About_Section .container-fluid .button_about{
   justify-content: start !important; 
 }
-.About_Section .container-fluid .about_para{
-  width: 45% !important;
-}
+
 .About_Section .container-fluid .arrow_line{
   border-bottom:  2px solid white;
   display: inline-block;
@@ -519,15 +917,18 @@ position: relative !important;
 
 
 /* media query */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 319px) {
 
 .About_Section .about_img{
   margin: auto !important;
-  width: 90%;
+  width: 100%;
+  margin-top: 50px !important;
   height: 100% !important;
-  margin-left: 40px !important;
-  margin-top: 15px !important;
+  margin-left: 25px !important;
   
+}
+.case_studies_section .row{
+  flex-direction: column-reverse !important;
 }
 .About_Section .container-fluid .about_title{
   
@@ -540,47 +941,138 @@ position: relative !important;
   display: none;
 
 }
-.About_Section .container-fluid .about_para{
+.About_Section .row .about_para{
   
   /* color: red !important; */
   /* text-align: start !important; */
-  font-size: 24px !important;
-
- width: 100% !important;
+  font-size: 16px !important;
+  margin-left: -30px !important;
+ width: 126% !important;
+ text-align: justify;
+ word-spacing: 1px !important;
  margin-left: 40px;
+
 
 }
 
 .About_Section .container-fluid .about_desp{
-  font-size: 15px;
-  width: 110% !important;
-  text-align: justify !important;
-  margin-left: -20px !important;
-
+  font-size: 14px;
+  margin-left: -53px !important;
+  width: 165% !important;
+ text-align: justify !important;
  
 }
 .About_Section .container-fluid .button_about{
   
   text-align: start !important;
  
-  margin-left: 40px;
+  margin-left: -8px;
 }
-.About_Section .container-fluid .about_btn{
+.About_Section .row .about_btn{
   width: 190px !important;
-  padding: 20px !important;
+  padding: 8px !important;
+  margin-left: -16px !important;
   
 }
+.About_Section .about_paragraph{
+  margin-top: 10px;
 }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
 
-@media screen and (min-device-width: 581px) and (max-device-width: 982px) { 
-  /* STYLES HERE */
-
-  .about_img{
-      margin-left: 95px !important;
-      text-align: center;
-      width: 80%;
+  .About_Section .about_img{
+    margin: auto !important;
+    width: 100%;
+    margin-top: 50px !important;
+    height: 100% !important;
+    margin-left: 25px !important;
+    
   }
+  .case_studies_section .row{
+    flex-direction: column-reverse !important;
+  }
+  .About_Section .container-fluid .about_title{
+    
+    /* color: red !important; */
+    text-align: start;
+    font-size: 35px !important;
+    margin-left: 30px;
+  }
+  .About_Section .container-fluid .arrow_line{
+    display: none;
+  
+  }
+  .About_Section .row .about_para{
+    
+  
+    font-size: 18px !important;
+    margin-left: -30px !important;
+   width: 112% !important;
+   text-align: justify;
+   word-spacing: 1px !important;
+   margin-left: 40px;
+  
+  
+  }
+  
+  .About_Section .container-fluid .about_desp{
+    font-size: 14px;
+    margin-left: -53px !important;
+    width: 125% !important;
+   text-align: justify !important;
+   
+  }
+  .About_Section .container-fluid .button_about{
+    
+    text-align: start !important;
+   
+    margin-left: -8px;
+  }
+  .About_Section .row .about_btn{
+    width: 190px !important;
+    padding: 8px !important;
+    margin-left: -16px !important;
+    
+  }
+  .About_Section .about_paragraph{
+    margin-top: 10px;
+  }
+
+  @media screen and (min-device-width: 481px) and (max-device-width: 768px){
+    .About_Section .about_img{
+      margin: auto !important;
+      width: 100%;
+      margin-top: 50px !important;
+      height: 100% !important;
+      margin-left: 25px !important;
+      
+    }
+    .About_Section .container-fluid .about_para{
+      width: 114% !important;
+    }
+    
+    .About_Section .container-fluid .about_desp{
+      font-size: 14px;
+      margin-left: -53px !important;
+      width: 125% !important;
+     text-align: justify !important;
+     
+    }
+  }
+
 }
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+  .About_Section .about_paragraph{
+    margin-top: 18px;
+    font-size: 190% !important;
+  }
+  .about_img{
+    margin-left: 95px !important;
+    text-align: center;
+    width: 80%;
+}
+}
+
 @media screen and (min-device-width: 1000px) and (max-device-width: 1682px) { 
   /* STYLES HERE */
   .About_Section .container-fluid .a{
@@ -806,8 +1298,8 @@ position: relative !important;
   background-color: var(--second-primary);
 }
 .contact .form_data{
-  margin-left: 158px;
-    width: 97%;
+  margin-left: 128px !important;
+    width: 80% !important;
 }
 .contact .contact_title{
 color: var(--fourth-primary);
@@ -817,10 +1309,7 @@ margin-top: 70px !important;
   color: var(--primary);
   font-weight: 500;
 }
-.contact .first .gg {
-  /* margin-left: 200px !important;
-  position: absolute; */
-}
+
 .contact form label{
 color: var(--primary);
 font-weight: 500;
@@ -844,34 +1333,75 @@ font-weight: 500;
 }
 
 
-/* media query start for contact section */
-/* @media screen and (min-device-width: 1000px) and (max-device-width: 1682px) {
-  .contact .contact_section_first_block{
-       margin-left: -180px;
-       
-  } */
 
 
+@media screen and (max-width: 319px) {
+  .contact_main_section .first{
+    /* margin-left: -24px; */
+    width: 450px !important;
+   
+    height: 739px;    
+}
 
-@media screen and (max-width: 581px) {
   .contact .contact_section_first_block{
        margin-left: -80px;
-       height: 739px;    
+       height: 739px;
+       width: 110% !important;  
+    
   }
   .contact .info {
     margin-top: 4%;
-    margin-left: 12%;
+    margin-left: 16%;
     width: 141%;
 }
-  }
-  .contact .contact_section_second_block .cd_form{
-    width: 140%;
-    margin-left: -80px;
+.contact_main_section .second {
+  background-color: #fff;
 }
+  }
+
 
 .contact .contact_section_second_block .cd_form {
-  width: 100%;
-  margin-left: -129px;
+  width: 125%;
+  margin-left: -155px;
+}
+
+.contact .form_data {
+  margin-left: 81px;
+  width: 86%;
+}
+
+.contact .form_data {
+  margin-left: 84px;
+  width: 136%;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+  .contact_main_section .first{
+    /* margin-left: -24px; */
+    width: 450px !important;
+   
+    height: 739px;    
+}
+
+  .contact .contact_section_first_block{
+       margin-left: -80px;
+       height: 739px;
+       width: 90% !important;  
+    
+  }
+  .contact .info {
+    margin-top: 4%;
+    margin-left: 16%;
+    width: 141%;
+}
+.contact_main_section .second {
+  background-color: #fff;
+}
+  
+
+
+.contact .contact_section_second_block .cd_form {
+  width: 105%;
+  margin-left: -155px;
 }
 
 .contact .form_data {
@@ -884,44 +1414,89 @@ font-weight: 500;
   width: 136%;
 }
 
-@media screen and (min-device-width: 582px) and (max-device-width: 781px) {
-  .contact .contact_section_first_block{
-    margin-left: -60px;
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px){
+  .contact_main_section .first{
+    /* margin-left: -24px; */
+    width: 490px !important;
+   
     height: 739px;    
 }
-.contact .info {
- margin-top: 4%;
-   margin-left: -85px;
-   width: 104%;
+
+  .contact .contact_section_first_block{
+
+       height: 739px;
+       width: 90% !important;  
+       margin-left: -90px;
+    
+  }
+  .contact .info {
+    margin-top: 4%;
+    margin-left: 16%;
+    width: 141%;
 }
-.contact .contact_section_second_block .cd_form{
- width: 110%;
- margin-left: -40px;
+.contact_main_section .second {
+  background-color: #fff;
+}
+
+
+.contact .contact_section_second_block .cd_form {
+  width: 95%;
+  margin-left: -155px;
+}
+
+.contact .form_data {
+  margin-left: 81px;
+  width: 86%;
+}
+
+.contact .form_data {
+  margin-left: 84px;
+  width: 136%;
 }
 
 }
-@media screen and (min-device-width: 782px) and (max-device-width: 1041px) {
-  .contact .contact_section_first_block{
-    margin-left: -130px;
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px){
+  .contact_main_section .first{
+
+    width: 150% !important;
+   
     height: 739px;    
 }
-.contact .info {
- margin-top: 4%;
-   margin-left: -90px;
-   width: 75%;
+
+  .contact .contact_section_first_block{
+
+       height: 739px;
+       width: 80% !important;  
+       margin-left: -120px;
+    
+  }
+  .contact .info {
+    margin-top: 4%;
+    margin-left: 16%;
+    width: 141%;
 }
-.contact .contact_section_second_block .cd_form{
- width: 130%;
- margin-left: -55px;
- margin-top: 4%;
+.contact_main_section .second {
+  background-color: #fff;
 }
 
 
+.contact .contact_section_second_block .cd_form {
+  width: 225%;
+  margin-left: -185px;
 }
+.contact .contact_subtitle{
+  color: var(--primary);
+  font-size: 180% !important;
+}
+
+} 
+
 @media screen and (min-device-width: 982px) and (max-device-width: 1311px) {
   .contact .contact_section_first_block{
-    margin-left: -130px;
-    height: 739px;    
+    margin-left: 50px;
+    height: 739px;   
+    width: 140% !important;   
 }
 .contact .info {
  margin-top: 4%;
@@ -933,8 +1508,6 @@ font-weight: 500;
  margin-left: -50px;
  margin-top: 3%;
 }
-
-
 
 }
 
@@ -1154,6 +1727,20 @@ ul {
   /* Also define standard property for compatibility */
   background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+
+/* media query for footer section */
+@media screen and (max-width: 319px) {
+  .footer-section .footer-widget{
+ margin-top: 10px; 
+}
+.footer-section .inline{
+  display: inline !important;
+  background-color: #18d26e;
+}
+.footer-section .subscribe-form button{
+  height: 53px;
+}
 }
 
 

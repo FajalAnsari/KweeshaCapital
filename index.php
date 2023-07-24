@@ -59,23 +59,23 @@
                 <div class="carousel-caption">
                   <h5 class="text-center">Welcome to Kweesha Capital</h5>
                   <p class="w-50 mx-auto"> Your personal think tank for success. Our mission is not merely to assist but to revolutionize the way you conduct your lending operations.</p>
-                  <button class="button-2">Get Started</button>
+                  <a href="#Solutions"><button class="button-2">Get Started</button></a>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="images/kweesha_hero_2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-item dn">
+                <img src="images/kweesha_hero_2.jpg" class="d-block w-100 " alt="...">
                 <div class="carousel-caption">
                   <h5 class="text-center">Welcome to Kweesha Capital</h5>
                   <p class="w-50 mx-auto">We strive to create a better, more accessible financial environment for small businesses and individual borrowers, enhancing not just the lending process but also the overall financial landscape.</p>
-                  <button class="button-2">Get Started</button>
+                  <a href="#Solutions"><button class="button-2">Get Started</button></a>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="images/kweesha_hero_3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-item dn">
+                <img src="images/kweesha_hero_3.jpg" class="d-block w-100 " alt="...">
                 <div class="carousel-caption">
                   <h5 class="text-center">Welcome to Kweesha Capital</h5>
                   <p class="w-50 mx-auto">Through our services, we aim to shine a light on the hidden growth opportunities often overlooked when businesses are merely focused on survival.</p>
-                  <button class="button-2">Get Started</button>
+                  <a href="#Solutions"><button class="button-2">Get Started</button></a>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@
         <div class="section-title text-center p-5" >
             <h1 class="mt-5 text-uppercase">Solutions</h1>
             <img src="images/kweesha_home_logo.svg" alt="" class=" mx-auto d-block">
-            <p class="fs-5">Streamlining lead generation and refining financial models</p>
+            <p class="fs-5 solution_para">Streamlining lead generation and refining financial models</p>
           </div>
   
        <div class="container-fluid">
@@ -118,8 +118,7 @@
                     In doing so, we help you not just to survive, but thrive - paving the way for a healthier, more transparent, and efficient lending environment for all parties involved.
                 </h6></div>
                  <div class="mt-5 button_about">
-                   <button class="text-center p-2 w-25 about_btn border-0 text-white fs-5">Read More</button>
-                 </div>
+                  <button class="text-center p-2 w-25 about_btn border-0 text-white fs-5">Read More</button>
             </div>
         </div>
     </div>
@@ -133,7 +132,7 @@
         <div class="section-title text-center p-5">
             <h1 class="mt-5 text-uppercase">Case Studies</h1>
             <img src="images/kweesha_home_logo.svg" alt="" class=" mx-auto d-block">
-            <p class="fs-5">Transforming lenders' operations and enhancing lead generation</p>
+            <p class="fs-5 case_study_para">Transforming lenders' operations and enhancing lead generation</p>
           </div>
   
           <div class="row">
@@ -168,7 +167,7 @@
             <div class="section-title text-center p-5">
                 <h1 class="mt-5 text-uppercase">About Us</h1>
                 <img src="images/kweesha_home_logo.svg" alt="" class=" mx-auto d-block">
-                <p class="fs-5">A force for change in the lending industry</p>
+                <p class="fs-5 about_paragraph">A force for change in the lending industry</p>
               </div>
       
            <div class="row">
@@ -202,7 +201,7 @@
      
       
     
-   <div class='contact_title'> <h2 class="text-center contact_title fs-1 text-uppercase">Contact</h2></div>
+   <div class='contact_title '> <h2 class="text-center contact_title fs-1 text-uppercase">Contact</h2></div>
    <img src="images/kweesha_home_logo.svg" alt="" class=" mx-auto d-block">
     <div class="mx-auto text-center">
       <p class="w-75 mx-auto fs-5 contact_subtitle mt-3">Unlock new avenues for growth with us</p>
@@ -247,7 +246,7 @@
                 <div class='contact_section_second_block col-12'>
                   
                     <div class="p-5 cd_form">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form form_data">
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" role="form" class="php-email-form form_data">
                         <div class="row">
                           <div class="form-group col-md-6">
                             <label for="name">Your Name</label>
@@ -271,7 +270,7 @@
                           <div class="error-message"></div>
                           <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                        <div class="text-center"><button type="submit" name="esubmit">Send Message</button></div>
                       </form>
                     </div>
                     </div>
@@ -304,7 +303,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2  col-6 col-md-5 mb-30">
+                    <div class="col-xl-2 col-lg-2  col-7 col-md-5 mb-30">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
                                 <h3>QUICK LINK</h3>
@@ -320,7 +319,7 @@
                         </div>
                           
                       </div>
-                    <div class="col-xl-2 col-lg-2 col-6 col-md-7 mb-30">
+                    <div class="col-xl-2 col-lg-2 col-5 col-md-7 mb-30">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
                                 <h3>Upcoming</h3>
@@ -344,9 +343,9 @@
                                 <p class="text-white">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                             </div>
                             <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" class="text-white" placeholder="Email Address">
-                                    <button type="button">Subscribe</button>
+                                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" role="form" class="php-email-form form_data">
+                                    <input type="email" class="text-white" name="emails" placeholder="Email Address">
+                                    <button type="submit" name="msubmit" >Subscribe</button>
                                 </form>
                             </div>
                         </div>
@@ -366,3 +365,70 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+<?php
+
+
+if(isset($_POST['esubmit'])){
+
+  // Set the recipient email address
+  $to = "info@kweeshacapital.com";
+  $name = $_POST['name'];
+  $Subjects = $_POST['subject'];
+  $subject = "New message from contact form - Kweesha Capital";
+  $message = $_POST['message'];
+  $form = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // sanitizing user input
+
+  // Create the email content
+  $body = "Dear Admin,\n\n You have received a new message from the contact form on Kweesha Capital. Here are the details: \n\nName: $name\nEmail: $form\nSubject: $Subjects\nMessage: $message\n\nPlease respond to the sender as soon as possible.\n\nBest regards,\nKweesha Capital";
+
+
+
+  // Set additional headers
+  $headers = "From: $form";
+
+  $success = mail($to, $subject, $body, $headers);
+
+
+  if ($success) {
+    echo '<script>alert("Message sent successfully.")</script>';
+  } else {
+    echo '<script>alert("An error occurred while sending the message.")</script>';
+  }
+}
+
+?>
+
+
+<?php
+
+
+if(isset($_POST['msubmit'])){
+
+  // Set the recipient email address
+  $to = filter_var($_POST['emails'], FILTER_SANITIZE_EMAIL); // sanitizing user input;
+  $subject = "New Subscriber - Kweesha Capital";
+  $message = "Thank you for subscribing!";
+  $from = "info@kweeshacapital.com"; // sanitizing user input
+
+  // Create the email content
+  $body = "Dear User,\n\nYou have received a new message from the subscribe form on Kweesha Capital. Here are the details: \n\nName: $message\n\nPlease respond to the sender as soon as possible.\n\nBest regards,\nKweesha Capital";
+
+
+
+  // Set additional headers
+  $headers = "From: $to";
+
+  $success = mail($from, $subject, $body, $headers);
+
+
+  if ($success) {
+    echo '<script>alert("Message sent successfully.")</script>';
+  } else {
+    echo '<script>alert("An error occurred while sending the message.")</script>';
+  }
+}
+
+?>
+
+

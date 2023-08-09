@@ -1,4 +1,4 @@
-// <!--================= Progress bar on scroll window js ======================-->
+// <!--================= Progress bar on scroll window js ======================--
 
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
@@ -73,3 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add scroll event listener to the window
     window.addEventListener('scroll', checkSectionInView);
   });
+
+  
+
+ 

@@ -191,7 +191,15 @@ background: rgba(0, 0, 0, 0.568);
     .Hero_section .carousel-control-prev{
       display: none;
     }
+
+    
   
+}
+
+@media screen and (min-width: 580px) {
+  .carousel-caption p{
+    width: 50%;
+  }
 }
 
 /*=================== Hero section css end ===================*/
@@ -844,10 +852,7 @@ margin-top: 70px !important;
   color: var(--primary);
   font-weight: 500;
 }
-.contact .first .gg {
-  /* margin-left: 200px !important;
-  position: absolute; */
-}
+
 .contact form label{
 color: var(--primary);
 font-weight: 500;
@@ -964,10 +969,13 @@ font-weight: 500;
  margin-top: 3%;
 }
 
-
-
 }
 
+@media screen and (min-width: 580px) {
+  .contact_subtitle{
+    width: 50%;
+  }
+}
 
 
 
@@ -1142,5 +1150,15 @@ ul {
 }
 
 
- 
+@media screen and (max-width: 1199px) {
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: var(--fourth-primary);
+    padding: 18px 26px;
+    border: none;
+    top: 0;
+  }  
+}
+
  /*=================== Footer css end ===================*/

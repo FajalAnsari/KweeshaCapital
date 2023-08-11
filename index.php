@@ -136,7 +136,7 @@
             <div class="row">
                 <div class="col-lg-4 a">
                     <div class="me-5 position-relative aa"><img src="./images/about9.jpg"
-                            class="about_img mt-5 mb-5 img-fluid"></div>
+                            class="about_img mt-5 mb-5"></div>
                 </div>
                 <div class="col-lg-8 b">
                     <div class="about_text text-center p-5">
@@ -207,7 +207,7 @@
 
                             <div class="col-lg-4 a">
                                 <div class="me-5 position-relative"><img src="./images/about8.jpg"
-                                        class="about_img mt-5 mb-5 img-fluid"></div>
+                                        class="about_img mt-5 mb-5"></div>
                             </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                         <div class="row">
                             <div class="col-lg-4 a">
                                 <div class="me-5 position-relative"><img src="./images/about10.jpg"
-                                        class="about_img mt-5 mb-5 img-fluid"></div>
+                                        class="about_img mt-5 mb-5 "></div>
                             </div>
                             <div class="col-lg-8 b">
                                 <div class="about_text text-center p-5">
@@ -402,10 +402,10 @@
                                                 <h3>Upcoming</h3>
                                             </div>
                                             <ul>
-                                                <li><a href="">Employee</a></li>
-                                                <li><a href="">Agreement</a></li>
-                                                <li><a href="">E-sign</a></li>
-                                                <li><a href="">Omfg</a></li>
+                                                <li>Employee</li>
+                                                <li>Agreement</li>
+                                                <li>E-sign</li>
+                                                <li>Omfg</li>
 
                                             </ul>
                                         </div>

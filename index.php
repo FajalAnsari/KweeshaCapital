@@ -45,7 +45,7 @@
   <header className="p-2 fixed shadow">
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
-            <a href="index.html"><img src="images/kweesha_capital_logo.svg" class="img-fluid navbar-brand" alt="logo"></a>
+            <a href="index.php"><img src="images/kweesha_capital_logo.svg" class="img-fluid navbar-brand" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -401,7 +401,7 @@
                                             <div class="footer-widget-heading">
                                                 <h3>Upcoming</h3>
                                             </div>
-                                            <ul>
+                                            <ul id="upcoming-projects">
                                                 <li>Employee</li>
                                                 <li>Agreement</li>
                                                 <li>E-sign</li>

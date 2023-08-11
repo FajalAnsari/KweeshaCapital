@@ -1167,6 +1167,10 @@ ul {
   transform: scale(1.5); 
 }
 
+#upcoming-projects{
+  color: whitesmoke !important;
+}
+
 
 @media screen and (max-width: 1199px) {
   .subscribe-form button {

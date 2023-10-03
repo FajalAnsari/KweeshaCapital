@@ -217,7 +217,7 @@ background: rgba(0, 0, 0, 0.568);
 }
 .Soulutions_Section .about_img{
   height: 50vh;
-  margin-left: 330px;
+  margin-left: 230px;
 }
 .Soulutions_Section h1{
   color: var(--fourth-primary) !important;
@@ -507,7 +507,7 @@ position: relative !important;
 
 .About_Section .about_img{
   height:50vh;
-  margin-left: 330px;
+  margin-left: 230px;
 
 }
 .About_Section .container-fluid .about_btn{
@@ -1165,6 +1165,10 @@ ul {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
+}
+
+#upcoming-projects{
+  color: whitesmoke !important;
 }
 
 

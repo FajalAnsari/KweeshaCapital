@@ -286,8 +286,8 @@
                                                 <div class="address">
                                                     <i class="bi bi-geo-alt"></i>
                                                     <h4>Location:</h4>
-                                                    <p>16Navneet Vihar, Sector 9, Indira Nagar, Lucknow, Uttar Pradesh
-                                                        226021</p>
+                                                    <p>16 Navneet Vihar, Sector 9, Indira Nagar, Lucknow, Uttar Pradesh
+                                                        226016</p>
                                                 </div>
 
                                                 <div class="email">
@@ -298,11 +298,11 @@
                                                 <div class="phone">
                                                     <i class="bi bi-phone"></i>
                                                     <h4>Call:</h4>
-                                                    <p>+1 678-888-8324</p>
+                                                    <p>+1 9177459305</p>
                                                 </div>
 
                                                 <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14234.678331540266!2d81.0018291!3d26.882237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be34af2e0d36f%3A0x13fc545254663b45!2sDo%20It%20For%20Me%20LLC!5e0!3m2!1sen!2sin!4v1687926617408!5m2!1sen!2sin"
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.6696269658123!2d81.0018623!3d26.882235599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2a6bfffffff%3A0x884f6c4fa7ac8905!2sKweesha%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1696330399118!5m2!1sen!2sin%22"
                                                     frameborder="0" style="border:0; width: 100%; height: 270px;"
                                                     allowfullscreen></iframe>
                                             </div>

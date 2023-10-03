@@ -45,7 +45,7 @@
   <header className="p-2 fixed shadow">
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
-            <a href="index.php"><img src="images/kweesha_capital_logo.svg" class="img-fluid navbar-brand" alt="logo"></a>
+            <a href="index.html"><img src="images/kweesha_capital_logo.svg" class="img-fluid navbar-brand" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -136,7 +136,7 @@
             <div class="row">
                 <div class="col-lg-4 a">
                     <div class="me-5 position-relative aa"><img src="./images/about9.jpg"
-                            class="about_img mt-5 mb-5"></div>
+                            class="about_img mt-5 mb-5 img-fluid"></div>
                 </div>
                 <div class="col-lg-8 b">
                     <div class="about_text text-center p-5">
@@ -207,7 +207,7 @@
 
                             <div class="col-lg-4 a">
                                 <div class="me-5 position-relative"><img src="./images/about8.jpg"
-                                        class="about_img mt-5 mb-5"></div>
+                                        class="about_img mt-5 mb-5 img-fluid"></div>
                             </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                         <div class="row">
                             <div class="col-lg-4 a">
                                 <div class="me-5 position-relative"><img src="./images/about10.jpg"
-                                        class="about_img mt-5 mb-5 "></div>
+                                        class="about_img mt-5 mb-5 img-fluid"></div>
                             </div>
                             <div class="col-lg-8 b">
                                 <div class="about_text text-center p-5">
@@ -401,11 +401,11 @@
                                             <div class="footer-widget-heading">
                                                 <h3>Upcoming</h3>
                                             </div>
-                                            <ul id="upcoming-projects">
-                                                <li>Employee</li>
-                                                <li>Agreement</li>
-                                                <li>E-sign</li>
-                                                <li>Omfg</li>
+                                            <ul>
+                                                <li><a href="">Employee</a></li>
+                                                <li><a href="">Agreement</a></li>
+                                                <li><a href="">E-sign</a></li>
+                                                <li><a href="">Omfg</a></li>
 
                                             </ul>
                                         </div>

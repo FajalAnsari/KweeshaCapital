@@ -375,8 +375,7 @@
                                                 <span>Follow us</span>
                                                 <a href="#"><i class="bi bi-instagram icon"></i></a>
                                                 <a href="#"><i class="bi bi-facebook icon"></i></a>
-                                                <a href="#"><i class="bi bi-twitter icon"></i></a>
-                                                <a href="#"><i class="bi bi-linkedin icon"></i></a>
+                                                <a href="https://www.linkedin.com/company/kweesha-capital/"><i class="bi bi-linkedin icon"></i></a>
                                             </div>
                                         </div>
                                     </div>

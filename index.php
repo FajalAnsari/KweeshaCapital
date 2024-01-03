@@ -41,7 +41,7 @@
         <span id="progress-value">&#x1F815;</span>
     </div>
 
- <!--============  Navbar section start ===================-->
+ <!--============  Navbar Section STtart ===================-->
   <header className="p-2 fixed shadow">
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
